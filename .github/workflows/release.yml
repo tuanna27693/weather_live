@@ -1,0 +1,32 @@
+# Publishes a GitHub Release (with the APK) whenever a version tag such as v1.1.0 is pushed.
+# It only repackages files already in this repository: apk/LiveWeather-<version>.apk and version.json.
+name: Publish release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VER="${GITHUB_REF_NAME#v}"
+          APK="apk/LiveWeather-${VER}.apk"
+          test -f "$APK"
+          python3 - "$VER" <<'PY'
+          import json, sys
+          m = json.load(open('version.json', encoding='utf-8'))
+          assert m['versionName'] == sys.argv[1], 'tag and version.json disagree'
+          open('notes.txt', 'w', encoding='utf-8').write(m['notes'] + '\n\nSHA-256: ' + m['sha256'] + '\n')
+          PY
+          gh release create "$GITHUB_REF_NAME" "$APK" version.json \
+            --title "Live Weather ${VER}" --notes-file notes.txt
