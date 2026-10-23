@@ -1,8 +1,8 @@
 {
-    "versionCode":  2,
-    "versionName":  "1.1.0",
-    "apkUrl":  "https://raw.githubusercontent.com/tuanna27693/weather_live/main/apk/LiveWeather-1.1.0.apk",
-    "sha256":  "4c7d1055f4316f22606123bb27f24ca832e8af563707f9a47599985c9d0ab2c9",
-    "size":  2806920,
-    "notes":  "Bầu trời đêm thật: sao theo mùa, Ngân Hà, hành tinh; trăng đúng kích thước và độ mờ khi mới mọc.\nMưa phùn có hiệu ứng riêng; đối chiếu 2 nguồn và bản tin sân bay để tránh báo mưa sai.\nNhật ký thời tiết (xuất để gửi), widget đồng bộ với hình nền, hỗ trợ máy tính bảng.\nTự cập nhật ứng dụng từ GitHub."
+    "versionCode":  3,
+    "versionName":  "1.1.1",
+    "apkUrl":  "https://raw.githubusercontent.com/tuanna27693/weather_live/main/apk/LiveWeather-1.1.1.apk",
+    "sha256":  "e7fba0aac1241479af2aaacf5e413244685e018cd20bea3aff2a0d06c0032458",
+    "size":  2811016,
+    "notes":  "Sửa lỗi hiện đầy sao lúc hoàng hôn (sao chỉ xuất hiện khi trời thật sự tối).\nSao mờ dần tự nhiên về phía chân trời, không còn đường cắt rạch ròi.\nSố sao theo độ tối bầu trời nơi ở (thành phố / ngoại ô / vùng quê), mặc định thành phố.\nDữ liệu thời tiết cũ không còn làm bầu trời đầy sao."
 }
