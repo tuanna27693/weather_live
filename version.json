@@ -1,8 +1,8 @@
 {
-    "versionCode":  3,
-    "versionName":  "1.1.1",
-    "apkUrl":  "https://raw.githubusercontent.com/tuanna27693/weather_live/main/apk/LiveWeather-1.1.1.apk",
-    "sha256":  "e7fba0aac1241479af2aaacf5e413244685e018cd20bea3aff2a0d06c0032458",
+    "versionCode":  4,
+    "versionName":  "1.1.2",
+    "apkUrl":  "https://raw.githubusercontent.com/tuanna27693/weather_live/main/apk/LiveWeather-1.1.2.apk",
+    "sha256":  "6e7d14e5445fe043e87a414fd0733935f7dee044b89ac5febdabb0df12155fde",
     "size":  2811016,
-    "notes":  "Sửa lỗi hiện đầy sao lúc hoàng hôn (sao chỉ xuất hiện khi trời thật sự tối).\nSao mờ dần tự nhiên về phía chân trời, không còn đường cắt rạch ròi.\nSố sao theo độ tối bầu trời nơi ở (thành phố / ngoại ô / vùng quê), mặc định thành phố.\nDữ liệu thời tiết cũ không còn làm bầu trời đầy sao."
+    "notes":  "Màn hình ngang: mặt trời và mặt trăng đi trọn bề ngang từ Đông sang Tây như màn hình dọc; sao và Dải Ngân Hà giữ nguyên hình dạng, không bị kéo dãn.\r\nSửa lỗi mặt trời/mặt trăng trượt từ góc dưới lên mỗi khi bật lại màn hình sau một thời gian: nay hiện ngay đúng vị trí hiện tại.\r\nSửa lỗi hiện đầy sao lúc hoàng hôn (sao chỉ xuất hiện khi trời thật sự tối).\r\nSao mờ dần tự nhiên về phía chân trời, không còn đường cắt rạch ròi.\r\nSố sao theo độ tối bầu trời nơi ở (thành phố / ngoại ô / vùng quê), mặc định thành phố.\r\nDữ liệu thời tiết cũ không còn làm bầu trời đầy sao."
 }
